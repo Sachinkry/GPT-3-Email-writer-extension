@@ -1,4 +1,5 @@
 {
+  "author": "Sachin Yadav",
   "name": "GPT-3 Email Writer",
   "description": "Write emails faster, better, and more efficiently with GPT-3",
   "version": "1.0",
@@ -11,10 +12,22 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Generate Email"
+    "default_title": "Generate Email",
+    "default_icon": {
+      "48": "assets/48.png",
+      "72": "assets/72.png",
+      "96": "assets/96.png"
+    }
   },
   "background": {
     "service_worker": "scripts/contextMenuServiceWorker.js"
   },
-  "permissions": ["contextMenus", "tabs", "storage"]
+  "permissions": ["contextMenus", "tabs", "storage"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["scripts/content.js"]
+    }
+  ]
 }
