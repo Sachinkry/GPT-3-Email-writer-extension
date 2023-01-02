@@ -1,6 +1,6 @@
 
 # MailGenie - Email generator for gmail
-#### Generate emails directly in gmail body with just few lines of text and clicks.
+### Generate emails directly in gmail with just few lines of text and clicks.
 
 ## Installation
 To use this extension, you will need to download the ZIP file from this repository and install it in your Chrome browser.
