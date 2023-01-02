@@ -5,7 +5,7 @@
 ## Installation
 To use this extension, you will need to download the ZIP file from this repository and install it in your Chrome browser.
 
-1. Download the ZIP file by clicking the "Code" button on this page and selecting "Download ZIP."
+1. Download the ZIP file by clicking the "Clone or download" `green` button on this page and selecting "Download ZIP."
 2. Extract the ZIP file to a location on your computer.
 3. In Chrome, go to the extensions page (chrome://extensions/) and enable "Developer mode" in the top right corner.
 4. Click the "Load unpacked" button and select the folder containing the extracted files. 
