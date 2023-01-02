@@ -1,4 +1,4 @@
 
-#### GPT-3 powered email writing assistant: a web extension
+## MailGenie - Email generator for gmail
+#### Generate emails directly in gmail body with just few lines of text
 
-api_key=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

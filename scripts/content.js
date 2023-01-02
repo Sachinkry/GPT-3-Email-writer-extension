@@ -67,18 +67,14 @@ const insertIntoGmail = (content) => {
 // Listen for messages from the context menu service worker
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const { content } = request;
-    console.log(content);
+    // console.log(content);
     const result = insertIntoGmail(content);
     // if (request.message === 'inject') {
-
-    //     // const result = insert(content);
-    //     const result2 = insertIntoGmail(content);
-
-    //     if(!result2) {
+        
+    //     if(!result) {
     //         sendResponse({ status: 'failed' });
     //     }
 
-        
     //     sendResponse({ status: 'success' });
     // }
 })

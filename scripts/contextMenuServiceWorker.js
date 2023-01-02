@@ -37,8 +37,8 @@ const getKey = () => {
 
 const generate = async (prompt) => {
     // get your api key from storage
-    // const key = await getKey();
-    const key = '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';
+    const key = await getKey();
+    
     // url for completions endpoint
     const url = 'https://api.openai.com/v1/completions';
 
@@ -59,6 +59,7 @@ const generate = async (prompt) => {
 
     // get the response
     const completion = await completionResponse.json();
+    console.log(completion);
     return completion.choices.pop();
 }
 
